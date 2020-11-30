@@ -1,0 +1,43 @@
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/xsl/transform">
+<xsl:template match="/">
+<html>
+ <body>
+  <h2>my books collection</h2>
+   <table border="1">
+   <tr bgcolor="red">
+   <th align="left">title</th>
+   <th align="left">author</th>
+   <th align="left">edition</th>
+   <th align="left">price</th>
+  </tr>
+  <xsl:for-each select+"bookstore/book">
+  <tr>
+   <td><xsl:value-of select="title"/></td>
+   <td><xsl:value-of select="author"/></td>
+   <td><xsl:value-of select="edition"/></td>
+   <td><xsl:value-of select="price"/></td>
+  </tr>
+  <xsl:for-each>
+  </table>
+ </xsl:for-each>
+</table>
+</body>
+</html>
+</xsl:template>
+<?xsl:stylesheet>
+ <?xml version="1.0"?>
+ <?xml-stylesheet type="text/xsl" href ="bookstore.xsl"?>
+ <bookstore>
+   <book>
+	<title>JAVA</title>
+	<author>HERBERT SCHILDT</author>
+	<edition>9th EDITION</edition>
+	<price>650.00</price>
+   </book>
+   <book>
+	<title>CRYPTOGRAPHY & NETWORK SECURITY</title>
+	<author>WILLIAM STALLINGS</author>
+	<edition>6th EDITION</edition>
+	<price>850.00</price>
+   </book>
+ </bookstore>

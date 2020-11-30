@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>lab15</title>
+</head>
+<body>
+<h,style="text-align:center;">.login</h1>
+<form name="f1"style="font-size:"26px:">
+Name:<input type="text"name="name"><br><br>
+Father name:<input type="text"name="fname"><br><br>
+Age:<input type="text"placeholder="age should between 18 and 25"name="a">
+<input type="submit"on click:"fun()">
+</form>
+<script>
+function fun()
+{
+var b=ParseInt(document.f1.a.value);
+if(b>=18)
+{
+if(b<=25)
+{
+window.alert("data within limit");
+}
+else
+{
+window.alert("data not in a limit");
+}
+}
+else
+{
+window.alert("data not in a limit");
+}
+}
+</script>
+</body>
+</html>

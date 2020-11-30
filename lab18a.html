@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+     <title> lab18 </title>
+  </head>
+ <body>
+  <h1> string & math objects</h1>
+  <script type="text/javascript">
+  function st()
+   {
+    var s=prompt("enter a string");
+    var a=s.to uppercase();
+    document.get element ById("demo").inner HTML="uppercase:"+a+"<br>lowercase:"+s.length+"<br>char at 3rd position:"+s.char at(3);
+   }
+    function math()
+     {
+      var a=prompt("enter a value");
+      var b=prompt("enter b value");
+      document.get element ById("demo").inner HTML="absolute value:"+math abs(a)+"<br>square root of"+b+":"+math.sqrt(b)+"<br>minimum value:"+math.min(a,b)+"<br>maximum value:"+math.max(a,b)+"<br>power:"+math.pow(a,b);
+      }
+     </script>
+     <p id="demo"><ip>
+     <from>
+	<input style="font-size;20px;"type="button" value="string" onclick="st()">
+	<input style="font-size;20px;"type="button" value="math" onclick="math()">
+      </from>
+     </body>
+    </html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+     <title> array elements </title>
+  </head>
+ <body>
+        <button on click="updating()">update</button>
+        <p id="demo0"></p>
+	<p id="demo1"></p>
+	<p id="demo2"></p>
+	<p id="demo3"></p>
+  <script>
+	var a=[3,4,5,1,2,3]
+	var i,c[];
+
+        for(i=0;i<a.length;i++)
+	{
+	 c[i]=a[i]
+         function updating()
+	{
+	 var i,a len;
+	 a len=c.length();
+         for(i=0;i<a len;i++)
+	{
+	 if(i=a len)
+	{
+	 c[i]=6;
+	}
+        }
+     document.get Element ById("demo").innerHTML:"array updating is:"+c;
+	}
+ function string()
+  {
+   var i,a len,temp;
+   a len=a.length;
+   for(j=0;j<a len;j++)
+   { 
+     for(j=0;j<a len;j++)
+      {
+	if(a[j]>a[i])
+ 	 {
+           temp=a[j];
+	   a[j]=a[j+1];
+	   a[j+1]=temp;
+          }
+       }
+    }

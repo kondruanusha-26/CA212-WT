@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>lab11</title>
+<script language="java script">
+var count=1;
+function verify()
+{
+alert(document.f1.user.value);
+alert(document.f1.password.value);
+if(count<3)
+{
+if(document.user.value=="akhil"&&document.f1.password.value=="kalyan")
+{
+document.write('you are in')
+}
+else
+{
+alert("invalid login reload the page");
+f1.user.value=" ";
+f1.user.focus();
+f1.user.value=" ";
+count++;
+}
+}
+</script>
+</head>
+<body>
+<form name="f1">
+<username:<br><input type="text name"="user">
+<br>
+<password:<br><input type="password"name="pass"value=" ">
+<br>
+<input type="button"value="login"onclick="verify()">
+</form>
+</body>
+</html>

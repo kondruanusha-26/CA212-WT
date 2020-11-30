@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>lab10</title>
+<script>
+function operations()
+{
+var j=document.book.t5.length;
+for(var i=0;i<j;i++)
+{
+if(document.book.t5[i].selected)
+{
+if(document.book.t5[i].value==1)
+{
+document.book.t4.value=Number(document.book.t6 value)+Number(document.book.t4.value);
+}
+else
+{
+bal=Number(document.book.t4.value)-Number(document.book.t6.value);
+if(balance<100)
+{
+alert("withdraw is not possible there is no sufficient amount");
+}
+else
+{
+document.book.t4.value=bal;
+}
+}
+}
+}
+}
+</script>
+</head>
+<body>
+<center><h1>book information</h1></center>
+<br><br>
+<form name="book">
+<h1>
+Name:<br>
+<input type="text"name="t1"><br>
+account Number:<br>
+<input type=""password"name="t2"><br>
+Address:<br>
+<text area name="t3"></text area><br>
+Opening balance:<br>
+<input type="text"name="t4"value="1000"disabled><br>
+operation:<br>
+<select name="t5">
+<option value="1">Deposit</option>
+<option value="2">Withdraw</option>
+</select>
+Amount:<br>
+<input type="text"name="tr">
+<input type="button"value="submit"onclick="operation()">
+</h1>
+</form>
+</body>
+</html>

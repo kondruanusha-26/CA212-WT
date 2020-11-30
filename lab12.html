@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>lab12</title>
+<script type="text/javascript">
+function password()
+{
+var no="0123456789";
+var c="abcdefghijklmnopqrstuvwxyz";
+var ch=no+c+c.to uppercase();
+var pl=8;
+var random string=" ";
+for(var i=0;i<pl;i++)
+{
+var rno=math.floor(math.random*ch.length);
+random string+=ch.substring(rno,rno+1);
+document.f.t2.value=randomstring;
+}
+}
+function valid()
+{
+if(document.f1.t1.value!=" "||document.f.t2.value!=" ")
+window.alert("welcome");
+else
+window.alert("check once before submit");
+}
+</script>
+</head>
+<body>
+<form name="f'>
+username:
+<input type="text"name="t1"onclick="time()"><br>
+password:
+<input type="text"name="t2"onfocus="time()"><br>
+<center>
+<input type="button"value="generate"onclick="password()">
+<input type="button"value="submit"onclick="valid()">
+</form>
+</body>
+</html>
